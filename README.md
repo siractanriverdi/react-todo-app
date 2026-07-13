@@ -57,24 +57,3 @@ npm run dev
 # 3. Yayın için derleme
 npm run build
 ```
-
-## GitHub'a Yükleme
-
-```bash
-git init
-git add .
-git commit -m "Görev Defteri: React + Tailwind TODO uygulaması"
-git branch -M main
-# GitHub'da 'gorev-defteri' adında PUBLIC bir repo oluşturduktan sonra:
-git remote add origin https://github.com/KULLANICI_ADINIZ/gorev-defteri.git
-git push -u origin main
-```
-
-## Netlify ile Yayına Alma
-
-1. [netlify.com](https://www.netlify.com) hesabınızla giriş yapın.
-2. **Add new site → Import an existing project → GitHub** seçin ve repoyu bağlayın.
-3. Ayarlar otomatik algılanır, kontrol edin:
-   - Build command: `npm run build`
-   - Publish directory: `dist`
-4. **Deploy** butonuna basın. Çıkan `https://....netlify.app` linkini proje teslim formuna ekleyin.
